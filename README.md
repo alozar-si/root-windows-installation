@@ -17,7 +17,8 @@ Select desired ROOT version and choose correct Windows Visual Studio
 3. (Optional) Put `C:\root_v###\bin` to PATH
 4. Setup python environment for pyroot 32bit
     1. `set CONDA_FORCE_32BIT=1`
-    2. `conda create -n pyroot_env python=3.8.2` (choose correct version)
+    2. `conda create -n pyroot_env python=3.8.2` 
+        1. choose compatible python version, see [Troubleshooting 1.](#Troubleshooting)
 
 ## Usage
 
@@ -35,5 +36,5 @@ Select desired ROOT version and choose correct Windows Visual Studio
 ## Troubleshooting
 
 1. Failed importing DLL libcppyy___(version): 
-    1. Check python version (`root-config --python3-version`) if is compatible with installed root (ex: 6.26/06 needs python 3.8.2). 
+    1. Check python version (`root-config --python3-version`) if is compatible with installed root (ex: 6.26/06 needs python 3.8.2).
     2. [Link to the issue on root-forum](https://root-forum.cern.ch/t/some-problem-about-pyroot/44971)
