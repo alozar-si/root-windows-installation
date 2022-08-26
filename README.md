@@ -34,4 +34,6 @@ Select desired ROOT version and choose correct Windows Visual Studio
 
 ## Troubleshooting
 
-1. Failed importing DLL libcppyy___(version): check python version (`root-config --python3-version`) if is compatible with installed root (ex: 6.26/06 needs python 3.8.2). [Link to the issue on root-forum](https://root-forum.cern.ch/t/some-problem-about-pyroot/44971)
+1. Failed importing DLL libcppyy___(version): 
+    1. Check python version (`root-config --python3-version`) if is compatible with installed root (ex: 6.26/06 needs python 3.8.2). 
+    2. [Link to the issue on root-forum](https://root-forum.cern.ch/t/some-problem-about-pyroot/44971)
