@@ -15,7 +15,7 @@ Select desired ROOT version and choose correct Windows Visual Studio
     1. Example: `root_v6.26.06.win32.vc17.exe` needs `Windows Visual Studio 2022 32-bit x86`
 2. Install root
 3. (Optional) Put `C:\root_v###\bin` to PATH
-4. Setup python environment for pyroot 32bit
+4. (Optional 32bit) Setup python environment for pyroot 32bit
     1. `set CONDA_FORCE_32BIT=1`
     2. `conda create -n pyroot_env python=3.8.2` 
         1. choose compatible python version, see [Troubleshooting 1.](#Troubleshooting)
