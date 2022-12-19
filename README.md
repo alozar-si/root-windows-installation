@@ -39,7 +39,7 @@ Select desired ROOT version and choose correct Windows Visual Studio
 
 1. Start env `conda activate pyroot_env`
 2. Source ROOT:
-    1. call `C:\root\bin\thisroot.bat` before using pyroot OR
+    1. call `C:\root\bin\thisroot.bat` before using pyroot **OR**
     2. source in python script: `import sys; sys.path.append("C:\\root_v6.26.10\\bin")`
 5. In python: `import ROOT`
 
