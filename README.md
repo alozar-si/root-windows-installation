@@ -52,3 +52,10 @@ Select desired ROOT version and choose correct Windows Visual Studio
 ## References
 
 1. https://medium.com/@nrk25693/how-to-add-your-conda-environment-to-your-jupyter-notebook-in-just-4-steps-abeab8b8d084
+
+# Linux
+1. Install `ROOT` from [precompiled binaries](https://root.cern/install/#download-a-pre-compiled-binary-distribution) and follow installation procedure
+2. If missing libraries, use apt-file
+3. Install `pyenv`
+4. Install correct python verions using `pyenv install X.X.X`
+5. Activate python `pyenv local X.X.X` or `pyenv global X.X.X`
