@@ -2,23 +2,25 @@
 
 ## Installation
 
-### Prerequests
+### prerequisite
 
-Select desired ROOT version and choose correct Windows Visual Studio
+Select the desired ROOT version and choose the correct Windows Visual Studio
 
 1. Download and install Windows Visual Studio
 2. Anaconda or venv
 
-### Install
+### Install root x64 / x32
 
 1. Download ROOT: `https://root.cern/install/all_releases/`
-    1. Example: `root_v6.26.06.win32.vc17.exe` needs `Windows Visual Studio 2022 32-bit x86`
-2. Install root
+    1. Example: `root_v6.32.08.win64.vc17.exe` needs `Windows Visual Studio 2022 64-bit x64`
+2. Install Windows Visual Studio 2022
+    1. Install "Desktop development for Windows with C++"
+3. Install root
 3. (Optional) Put `C:\root_v###\bin` to PATH
-4. Setup python environment for pyroot (optional 32bit)
+4. Setup Python environment for pyroot (optional 32bit)
     1. `set CONDA_FORCE_32BIT=1` (optional)
-    2. `conda create -n pyroot_env python=3.8.2` 
-        1. choose compatible python version, see [Troubleshooting 1.](#Troubleshooting)
+    2. `conda create -n pyroot_env python=3.11.7` 
+        1. choose a compatible python version, see [Troubleshooting 1.](#Troubleshooting)
 
 ### Install PyRoot in jupyter notebook
 
@@ -46,7 +48,7 @@ Select desired ROOT version and choose correct Windows Visual Studio
 ## Troubleshooting
 
 1. Failed importing DLL libcppyy___(version): 
-    1. Check python version (`root-config --python3-version`) if is compatible with installed root (ex: 6.26/06 needs python 3.8.2).
+    1. Check python version (`root-config --python3-version`) if it is compatible with the installed root (ex: 6.26/06 needs python 3.8.2).
     2. [Link to the issue on root-forum](https://root-forum.cern.ch/t/some-problem-about-pyroot/44971)
 
 ## References
@@ -54,8 +56,8 @@ Select desired ROOT version and choose correct Windows Visual Studio
 1. https://medium.com/@nrk25693/how-to-add-your-conda-environment-to-your-jupyter-notebook-in-just-4-steps-abeab8b8d084
 
 # Linux
-1. Install `ROOT` from [precompiled binaries](https://root.cern/install/#download-a-pre-compiled-binary-distribution) and follow installation procedure
+1. Install `ROOT` from [precompiled binaries](https://root.cern/install/#download-a-pre-compiled-binary-distribution) and follow the installation procedure
 2. If missing libraries, use apt-file
 3. Install `pyenv`
-4. Install correct python verions using `pyenv install X.X.X`
+4. Install correct python version using `pyenv install X.X.X`
 5. Activate python `pyenv local X.X.X` or `pyenv global X.X.X`
